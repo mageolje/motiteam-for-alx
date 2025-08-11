@@ -14,6 +14,11 @@ $user = Auth::user();
     <div class="nav">
       <div><strong>Maternal Health Advisor</strong></div>
       <a href="/index.php">Dashboard</a>
+      <?php if ($user['role'] === 'mother'): ?>
+        <a href="/mother.php">Mother portal</a>
+      <?php elseif ($user['role'] === 'physician'): ?>
+        <a href="/physician.php">Physician portal</a>
+      <?php endif; ?>
       <a href="/appointments.php">Appointments</a>
       <a href="/chat.php">Chat</a>
       <a href="/upload.php">Uploads</a>
