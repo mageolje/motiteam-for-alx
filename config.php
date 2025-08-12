@@ -75,6 +75,8 @@ function redirect_to_role_dashboard(): void {
         header('Location: /mother/dashboard.php');
     } elseif ($user['role'] === 'physician') {
         header('Location: /physician/dashboard.php');
+    } elseif ($user['role'] === 'admin') {
+        header('Location: /admin/dashboard.php');
     } else {
         header('Location: /login.php');
     }
