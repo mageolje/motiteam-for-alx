@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; background: #f7f7fb; color: #222; }
+.header { background: #4b7bec; color: #fff; padding: 16px 20px; }
+.container { max-width: 1000px; margin: 20px auto; padding: 0 16px; }
+.card { background: #fff; border: 1px solid #e6e6ef; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.card h2 { margin-top: 0; }
+input, select, textarea { width: 100%; padding: 10px; border: 1px solid #d0d0dd; border-radius: 6px; margin: 6px 0 12px; }
+button, .btn { background: #4b7bec; color: white; border: none; padding: 10px 14px; border-radius: 6px; cursor: pointer; }
+.button-row { display: flex; gap: 8px; }
+.nav { display: flex; gap: 12px; align-items: center; }
+.nav a { color: #fff; text-decoration: none; opacity: 0.95; }
+.nav a:hover { text-decoration: underline; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border: 1px solid #e6e6ef; padding: 8px; text-align: left; }
+.badge { display: inline-block; padding: 2px 8px; background: #eee; border-radius: 999px; font-size: 12px; }
+.status-scheduled { background: #e3f2ff; }
+.status-completed { background: #e1ffe9; }
+.status-canceled { background: #ffe5e1; }
+.alert { background: #fff3cd; border: 1px solid #ffeeba; padding: 10px; border-radius: 6px; }
